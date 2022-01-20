@@ -6,13 +6,13 @@
 // n = 5.7
 
 int main(int argc, char const *argv[]) {
-  int a, b;
-  std::cin >> a >> b;
-  for(int i = 1; i < 10; i++) {
-    if(a*pow(3, i) > b*pow(2, i)) {
-      std::cout << i;
-      return 0;
-    }
-  }
-  return 0;
+	int a, b;
+	std::cin >> a >> b;
+	for(int i = 1; i < 10; i++) {
+		if(a*pow(3, i) > b*pow(2, i)) {
+			std::cout << i;
+			return 0;
+		}
+	}
+	return 0;
 }

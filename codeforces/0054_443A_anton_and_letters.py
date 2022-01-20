@@ -4,6 +4,6 @@ input_string = input_string[1:-1]
 splitted = input_string.split(", ")
 splitted = set(splitted)
 for i in splitted:
-    if(i == ''):
-        splitted.remove('')
+	if(i == ''):
+		splitted.remove('')
 print(len(splitted))
