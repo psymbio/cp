@@ -29,6 +29,9 @@ August 3, 2022
 August 4, 2022
 3 Leetcode
 
+August 5, 2022
+2 Leetcode
+
 ### Come back to
 https://leetcode.com/problems/word-search/
 https://leetcode.com/problems/text-justification/
