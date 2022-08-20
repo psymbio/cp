@@ -3,7 +3,10 @@ https://www.interviewbit.com/oops-interview-questions/
 Solving questions from: https://www.interviewkickstart.com/interview-questions/oops-interview-questions-for-experienced-programmers
 
 1. What are Constructors and Destructors?
-Constructors are used for instantiating objects. In python this is the `__init__()` method and it is called at the creation of an object.
+Constructors are used for instantiating objects. In python this is NOT the `__init__()` method and it is called at the creation of an object.
+https://www.programiz.com/article/python-self-why
+
+Technically speaking, a constructor is a method which creates the object itself. In Python, this method is `__new__()`.
 
 The two types of constructors are:
 + default: The default constructor takes no arguments while initializing the object of a specific class. Its definition has only one argument which is a reference to the instance being constructed.
