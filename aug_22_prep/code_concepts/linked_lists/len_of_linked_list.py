@@ -2,7 +2,7 @@ class node:
     def __init__(self, val):
         self.val = val
         self.next = None
-
+    
 class linkedList:
     def __init__(self):
         self.head = None
@@ -15,32 +15,25 @@ class linkedList:
             new_node.next = self.head
             self.head = new_node
     
+    def length(self):
+        # get length of a linked list iteratively
+        result = 0
+        temp = self.head
+        while temp:
+            temp = temp.next
+            result += 1
+        return result
+
+    def length_2(self):
+        # get length of a linked list recursively
+        pass           
+
     def print(self):
-        # why is it in this case that the entire ll doesn't just
-        # delete itself?
-        # technically temp was referencing it
         temp = self.head
         while temp.next:
             print(temp.val, "->", end="", sep="")
             temp = temp.next
         print(temp.val)
-    
-    def delete_nth_node(self, n):
-        i = 0
-        curr = self.head
-        prev = None
-        if n == 0:
-            return self.head.next
-        # we're just basically try to manipulate the next pointers
-        # of the nodes inside the linked list
-        while curr:
-            if i == n:
-                prev.next = curr.next
-                return self.head
-            prev = curr
-            curr = curr.next
-            i += 1
-        return self.head
 
 def create_ll_from_array(array):
     head = linkedList()
@@ -50,5 +43,4 @@ def create_ll_from_array(array):
     return head
 
 ll = create_ll_from_array([1, 2, 3, 4, 5])
-ll.delete_nth_node(1)
-ll.print()
+print("length of the linkedlist is: ", ll.length())

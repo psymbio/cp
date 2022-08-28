@@ -92,3 +92,5 @@ ll_2 = add_elements_in_ll_2([1, 2, 3, 4, 5])
 ```
 
 Here how does printing not make the linked list to be just the last node, but the function `playing_with_ref` modifies the linked list to just be equal to the value 1.
+
+Run: https://pythontutor.com/render.html#mode=display and realize what is happening here.
